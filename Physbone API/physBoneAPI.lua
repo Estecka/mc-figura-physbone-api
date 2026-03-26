@@ -154,7 +154,7 @@ local physBoneBase = {
 		end,
 	getRotMod =
 		function(self)
-			return self.upsideDown
+			return self.rotMod
 		end,
 	setVecMod =
 		function(self,val1,val2,val3)
