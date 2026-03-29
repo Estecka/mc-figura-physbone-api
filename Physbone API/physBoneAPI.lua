@@ -833,7 +833,9 @@ function physBone.physBoneRender(delta, context, curPhysBoneID)
 					local rot = part:getRot()
 
 					mat:translate(-pivot)
-						:rotate(rot.x,rot.y,rot.z)
+						:rotate(0, 0,rot.z)
+						:rotate(0, rot.y, 0)
+						:rotate(rot.x, 0, 0)
 						:translate(pivot)
 
 						:translate(-parentPivot)
